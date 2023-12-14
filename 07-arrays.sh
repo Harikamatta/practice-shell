@@ -1,8 +1,14 @@
 #!/bin/bash
 
-NUMBER=$1
-NUMBER=$2
+# Prompt the user for input
+echo "Enter the first number: "
+read num1
 
-RESULT= $(($NUMBER1-$NUMBER2))
+echo "Enter the second number: "
+read num2
 
-echo "Total:: $RESULT"
+# Perform subtraction
+result=$((num1 - num2))
+
+# Display the result
+echo "The result of $num1 - $num2 is: $result"
