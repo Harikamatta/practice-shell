@@ -1,3 +1,5 @@
 #!/bin/bash
 
-Date=($date)
+DATE=$(date)
+
+echo "Show date : ${DATE}"
