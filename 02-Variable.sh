@@ -1,4 +1,4 @@
-#!/BIN/BASH
+#!/bin/bash
 
 PERSON1=Harika
 PEROSN2=Deepika
