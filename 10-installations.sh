@@ -17,7 +17,7 @@ ID=$(id -u)
     echo "installing mysql success"
     fi
     yum install git -y
-    if [$ID -   ne 0 ]
+    if [ $ID -   ne 0 ]
     then 
     echo "Error: : installing GIT failed"
     else
