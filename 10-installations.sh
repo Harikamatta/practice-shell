@@ -21,4 +21,4 @@ then
 echo "Error: : installing GIT failed"
 else
 echo "installing GIT success"
-
+fi
