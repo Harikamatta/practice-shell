@@ -20,7 +20,7 @@ VALIDATE(){
     echo "root user"
     fi
 
-    yum install mysqlfsd -y
+    yum install mysql -y
     
     VALIDATE $? "Installing MYSQL"
     
