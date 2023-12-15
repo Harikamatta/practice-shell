@@ -6,4 +6,4 @@ then
 echo "Error not a root user"
 else 
 echo "root user"
-if
+fi
