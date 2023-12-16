@@ -6,7 +6,7 @@ echo "Error not a root user"
 else 
 echo "root user"
 fi
-yum install mysql -y
+yum install mysqld -y
 if [ $ID -ne 0 ]
 then
 echo "Installing of mysql failed"
