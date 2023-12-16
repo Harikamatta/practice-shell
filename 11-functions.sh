@@ -10,17 +10,17 @@ echo "script started executing at $TIMESTAMP" &>> LOGFILE
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-    echo "Error: : $2.. failed"
+    echo -e "Error: : $2.. failed"
     exit 1
     else 
-    echo "$2 installed successfully"
+    echo -e "$2 installed successfully"
     fi }
     if [ $ID -ne 0 ]
     then 
-    echo "$R Error not a root user $N"
+    echo -e "$R Error not a root user $N"
     exit 1
     else 
-    echo "$Groot user$N"
+    echo -e "$Groot user$N"
     fi
     yum install mysql -y
     VALIDATE $? "MYSQL installation SUCCESS"
