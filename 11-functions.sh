@@ -1,5 +1,12 @@
 #!/bin/bash
 ID=$(id -u)
+TIMESTAMP=$(date +%F-%H-%M-%S)
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+LOGFILE="/TMP/$0-$TIMESTAMP.log"
+echo "script started executing at $TIMESTAMP" &>> LOGFILE
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
@@ -10,10 +17,10 @@ VALIDATE(){
     fi }
     if [ $ID -ne 0 ]
     then 
-    echo "Error not a root user"
+    echo "$RError not a root user$N"
     exit 1
     else 
-    echo "root user"
+    echo "$Groot user$N"
     fi
     yum install mysql -y
     VALIDATE $? "MYSQL installation SUCCESS"
