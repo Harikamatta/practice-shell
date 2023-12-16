@@ -7,7 +7,7 @@ ID=$(id -u)
     else 
     echo "root user"
     fi
-    yum install mysqld -y
+    yum install mysql -y
     if [ $ID -ne 0 ]
     then
     echo "Installing of mysql failed"
